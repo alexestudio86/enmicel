@@ -2,7 +2,7 @@
       function modalArticleTemplate () {
 
         // <data:blog.homepageUrl.canonical/>
-        fetch('https://basic.enmicel.com/' + 'feeds/posts/summary/' + this.getAttribute('data-ident') + '?alt=json')
+        fetch('https://demo-basico.enmicel.com/' + 'feeds/posts/summary/' + this.getAttribute('data-ident') + '?alt=json')
           .then(res => res.json())
           .then(baseDeDatos => {
 
