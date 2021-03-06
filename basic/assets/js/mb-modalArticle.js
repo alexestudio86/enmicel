@@ -1,7 +1,8 @@
       // CONVERT JSON TO JS OBJECT MOBILE
       function modalArticleTemplate () {
 
-        fetch('<data:blog.homepageUrl.canonical/>' + 'feeds/posts/summary/' + this.getAttribute('data-ident') + '?alt=json')
+        // <data:blog.homepageUrl.canonical/>
+        fetch('https://basic.enmicel.com/' + 'feeds/posts/summary/' + this.getAttribute('data-ident') + '?alt=json')
           .then(res => res.json())
           .then(baseDeDatos => {
 
