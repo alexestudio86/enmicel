@@ -1,52 +1,46 @@
-// SEND DATA
-function sendData(){
-  whatsappNumber = '+527222610083';
-  textIntro = '%5F'+encodeURIComponent('Hola, me gustaría ordenar')+'%5F%0A%0A';
-  carCompleto = car.map(carComplete).join('');
-  function carComplete(elemnt){
-    let elemento =  elemnt.cantidad+'%20x%20'+encodeURIComponent(elemnt.titulo)+'%0A';
-    return elemento;
-  };
-  finalText = '%0A'+encodeURIComponent('A nombre de: ');
-  nameValidated = document.querySelector('#nombre').value;
-  nameCleaned = '%2A'+encodeURIComponent(nameValidated)+'%2A';
-  finalMessage = document.querySelector('#finalMessage');
+//MODAL PROMOTIONS TEMPLATE
+function modalPromotionsTemplate(){
+  let modal = document.getElementById('modal');
+  modalContent = document.createElement('div');
+  modalContent.classList.add('w3-modal-content', 'w3-center', 'w3-card', 'w3-animate-bottom');
+    imgFigure = document.createElement('img');
+    imgFigure.setAttribute('alt',this.getAttribute('data-title'));
+    imgFigure.setAttribute('src',this.getAttribute('data-img'));
+    imgFigure.style = 'width: 100%; height: 17em; object-fit: cover;';
+    exitBtn = document.createElement('a');
+    exitBtn.classList.add('w3-button', 'w3-large', 'w3-teal', 'w3-display-topright');
+    exitBtn.innerHTML = '&times;';
+    exitBtn.addEventListener('click', modalGeneral);
+    modalTitle = document.createElement('h1')
+    modalTitle.classList.add('w3-container', 'w3-teal', 'w3-xlarge', 'w3-padding');
+    modalTitle.textContent = this.getAttribute('data-title');
+    modalCaption = document.createElement('p');
+    modalCaption.classList.add('w3-padding-16');
+    modalCaption.style = 'margin:0';
+    modalCaption.textContent = this.getAttribute('data-caption');
 
-  finalMessage.href = 'https://wa.me/'+whatsappNumber+'/?text='+textIntro+carCompleto+finalText+nameCleaned;
-  finalMessage.setAttribute('target', '_blank');
-  // Limpiar todo
-  setInterval(function(){
-    car.splice(0,car.length);
-    localStorage.removeItem('car');
-    modalGeneral();
-    renderCar();
-    location.reload(true);
-  },1000);
 
+  modal.appendChild(modalContent)
+    modalContent.appendChild(imgFigure);
+    modalContent.appendChild(exitBtn);
+    modalContent.appendChild(modalTitle);
+    modalContent.appendChild(modalCaption);
 }
 
+// MODAL PROMOTIONS
+function modalGeneral (){
+  let modal = document.getElementById('modal');
+  modal.innerHTML = '';
+  modal.classList.toggle('w3-show');
+}
 
-
-// VALIDATE NAME
-function validateName(){
-
-  textoNombre = document.querySelector('#textoNombre');
-  nameToValidate = document.querySelector('#nombre');
-  nameToReview = /^[A-z ]+$/.test(nameToValidate.value);
-
-  if((nameToValidate.value).length < 4){
-    textoNombre.classList.add('w3-text-red');
-    textoNombre.innerText = 'Nombre demasiado corto'
-  }else{
-    textoNombre.innerText = 'Ingresa tu nombre para continuar';
-    textoNombre.classList.remove('w3-text-red');
-    if(!nameToReview){
-      textoNombre.classList.add('w3-text-red');
-      textoNombre.innerText = 'Caracteres no permitidos (1-9,!"·$...)'
-    }else{
-      textoNombre.classList.remove('w3-text-red');
-      textoNombre.innerText = 'Gracias por su preferencia'
-      sendData();
-    }
+// EVENT PROMOS
+function eventsPromotions () {
+  let promos = document.querySelectorAll('figure');
+  for (let promo of promos){
+	promo.addEventListener('click', modalGeneral, true);
+	promo.addEventListener('click', modalPromotionsTemplate);
   }
 }
+
+eventsPromotions();
