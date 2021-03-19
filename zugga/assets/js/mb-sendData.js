@@ -4,7 +4,7 @@ function sendData(){
   textIntro = '%5F'+encodeURIComponent('Hola, me gustaría ordenar')+'%5F%0A%0A';
   carCompleto = car.map(carComplete).join('');
   function carComplete(elemnt){
-    let elemento =  elemnt.cantidad+'%20x%20'+encodeURIComponent(elemnt.titulo)+'%0A';
+    let elemento =  elemnt.cantidad+'%20x%20'+encodeURIComponent(elemnt.titulo)+' | $'+encodeURIComponent(elemnt.subtotal)+'%0A';
     return elemento;
   };
   finalText = '%0A'+encodeURIComponent('A nombre de: ');
