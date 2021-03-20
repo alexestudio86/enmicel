@@ -1,18 +1,19 @@
 // SEND DATA
 function sendData(){
-  whatsappNumber = '+527222610083';
-  textIntro = '%5F'+encodeURIComponent('Hola, me gustaría ordenar')+'%5F%0A%0A';
-  carCompleto = car.map(carComplete).join('');
+  let whatsappNumber = '+527222610083';
+      textIntro = '%5F'+encodeURIComponent('Hola, me gustaría ordenar')+'%5F%0A%0A';
+      carCompleto = car.map(carComplete).join('');
   function carComplete(elemnt){
     let elemento =  elemnt.cantidad+'%20x%20'+encodeURIComponent(elemnt.titulo)+' | $'+encodeURIComponent(elemnt.subtotal)+'%0A';
     return elemento;
   };
+  dineroTotal = '____________________'+'%0A'+encodeURIComponent("Total: ")+dinero+'%0A'
   finalText = '%0A'+encodeURIComponent('A nombre de: ');
   nameValidated = document.querySelector('#nombre').value;
   nameCleaned = '%2A'+encodeURIComponent(nameValidated)+'%2A';
   finalMessage = document.querySelector('#finalMessage');
 
-  finalMessage.href = 'https://wa.me/'+whatsappNumber+'/?text='+textIntro+carCompleto+finalText+nameCleaned;
+  finalMessage.href = 'https://wa.me/'+whatsappNumber+'/?text='+textIntro+carCompleto+dineroTotal+finalText+nameCleaned;
   finalMessage.setAttribute('target', '_blank');
   // Limpiar todo
   setInterval(function(){
