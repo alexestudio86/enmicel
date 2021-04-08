@@ -17,7 +17,7 @@ const getArticle = (e) => {
     image.style = 'width: 100%; height: 17em; object-fit: cover;';
     exitBtn = document.createElement('a');
     exitBtn.classList.add('w3-teal', 'w3-button', 'w3-large', 'w3-display-topright');
-    exitBtn.innerHTML = 'X';
+    exitBtn.innerHTML = '&times;';
     exitBtn.addEventListener('click', modalGeneral);
     header = document.createElement('h1');
     header.classList.add('w3-container', 'w3-teal', 'w3-xlarge', 'w3-padding');
