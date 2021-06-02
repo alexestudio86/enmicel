@@ -139,7 +139,7 @@ Desktop
       </b:comment>
       </b:if>
     </b:if>
-# Widgets
+# Estructura
 
 Existe una gran cantidad de widgets disponibles para blogger, sin embargo es necesario considerar algunos puntos necesarios para su uso:
 
@@ -154,7 +154,7 @@ Existe una gran cantidad de widgets disponibles para blogger, sin embargo es nec
 
  1. Todos los widgets comienzan con la etiqueta <b:widget /> 
  2. Las etiquetas <b:widget /> deben encontrarse dentro de etiquetas <b:section />, es decir que no pueden estar embedidas directamente en otras etiquetas que no sean <b:section />
- 3. Todas las etiquetas <b:widget /> deben contar con un id único, sin embargo el id debe seguir la [siguiente nomenclatura:](#markdown-header-my-paragraph-title)
+ 3. Todas las etiquetas <b:widget /> deben contar con un id único, sin embargo el id debe seguir la [siguiente nomenclatura:](#widgets)
  4. Hello
 
 
@@ -177,5 +177,119 @@ FORMA INCORRECTA
     </header>
 
 
-## My paragraph title
+## Widgets
 
+
+
+| ![Google AdSence](https://alexestudio86.github.io/enmicel/pro/documentation/icon-adsense.gif) | AdSence |
+|--|--|
+
+
+
+    <b:widget id='AdSense1' locked='true' title='' type='AdSense' visible='' />
+
+| ![Google AdSence](https://alexestudio86.github.io/enmicel/pro/documentation/icon-attribution.gif) | Atribution|
+|--|--|
+
+    <b:widget id='Attribution1' locked='true' title='' type='Attribution' visible='' />
+
+Blog Archive
+
+    <b:widget id='BlogArchive1' locked='' title='' type='BlogArchive' visible='' />
+
+Blogger Button
+
+    <b:widget id='BloggerButton1' locked='' title='' type='BloggerButton' visible='' />
+
+Blog List
+
+    <b:widget id='BlogList1' locked='' title='' type='BlogList' visible='' />
+
+**Blog Post**
+
+    <b:widget id='Blog' locked='' title='' type='Blog1' visible='' />
+
+**Blog Search**
+
+    <b:widget id='BlogSearch1' locked='' title='' type='BlogSearch' visible='' />
+
+Contact Form
+
+    <b:widget id='ContactForm1' locked='' title='' type='ContactForm' visible='' />
+
+**Featured Post**
+
+    <b:widget id='FeaturedPost1' locked='' title='' type='FeaturedPost' visible='' />
+
+Feed
+
+    <b:widget id='Feed1' locked='' title='' type='Feed' visible='' />
+
+Followers
+
+    <b:widget id='Followers1' locked='' title='' type='Followers' visible='' />
+
+**Labels**
+
+    <b:widget id='Label1' locked='' title='' type='Label' visible='' />
+
+**Link List**
+
+    <b:widget id='LinkList1' locked='' title='' type='LinkList' visible='' />
+
+Navbar
+
+    <b:widget id='Navbar1' locked='' title='' type='Navbar' visible='' />
+
+**Page Header**
+
+    <b:widget id='Header1' locked='true' title='' type='Header' visible='' />
+
+**Page List**
+
+    <b:widget id='PageList1' locked='' title='' type='PageList' visible='' />
+
+**Picture**
+
+    <b:widget id='Image1' locked='' title='' type='Image' visible='' />
+
+Popular Post
+
+    <b:widget id='PopularPosts1' locked='' title='' type='PopularPosts' visible='' />
+
+Profile
+
+    <b:widget id='Profile1' locked='' title='' type='Profile' visible='' />
+
+Report Abuse
+
+    <b:widget id='ReportAbuse1' locked='' title='' type='ReportAbuse' visible='' />
+
+Text / HTML / Javascript
+
+    <b:widget id='HTML1' locked='' title='' type='HTML' visible='' />
+
+Stats
+
+    <b:widget id='Stats1' locked='' title='' type='Stats' visible='' />
+
+
+Subscribe
+
+    <b:widget id='Subscribe1' locked='' title='' type='Subscribe' visible='' />
+
+Text
+
+    <b:widget id='Text1' locked='' title='' type='Text' visible='' />
+
+Text List
+
+    <b:widget id='TextList1' locked='' title='' type='TextList' visible='' />
+
+Translate
+
+    <b:widget id='Translate1' locked='' title='' type='Translate' visible='' />
+
+Wikipedia
+
+    <b:widget id='Wikipedia1' locked='' title='' type='Wikipedia' visible='' />
