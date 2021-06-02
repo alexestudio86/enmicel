@@ -139,4 +139,43 @@ Desktop
       </b:comment>
       </b:if>
     </b:if>
+# Widgets
+
+Existe una gran cantidad de widgets disponibles para blogger, sin embargo es necesario considerar algunos puntos necesarios para su uso:
+
+## <b:section />
+
+ 1. Las etiquetas <b:section /> son propias de blogger y sirven como contenedores para los widgets
+ 2. Las etiquetas <b:section /> pueden estar embedidas en cualquier otra etiqueta html5
+ 3. Todas las etiquetas <b:section /> deben contar con un id único, el cual puede nombrarse de forma arbitraria
+ 4. Una vez renderizado el contenido, las etiquetas <b:section /> se muestran como divs
+
+## <b:widget />
+
+ 1. Todos los widgets comienzan con la etiqueta <b:widget /> 
+ 2. Las etiquetas <b:widget /> deben encontrarse dentro de etiquetas <b:section />, es decir que no pueden estar embedidas directamente en otras etiquetas que no sean <b:section />
+ 3. Todas las etiquetas <b:widget /> deben contar con un id único, sin embargo el id debe seguir la [siguiente nomenclatura:](#markdown-header-my-paragraph-title)
+ 4. Hello
+
+
+
+
+
+FORMA CORRECTA
+
+    <header>
+      <b:section id='container'>
+        <b:widget id='header' />
+      </b:section>
+    </header>
+
+
+FORMA INCORRECTA
+
+    <header>
+      <b:widget id='header' />
+    </header>
+
+
+## My paragraph title
 
