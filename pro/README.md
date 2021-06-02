@@ -179,117 +179,134 @@ FORMA INCORRECTA
 
 ## Widgets
 
-
-
 | ![Google AdSence](https://alexestudio86.github.io/enmicel/pro/documentation/icon-adsense.gif) | AdSence |
 |--|--|
 
-
-
     <b:widget id='AdSense1' locked='true' title='' type='AdSense' visible='' />
 
-| ![Google AdSence](https://alexestudio86.github.io/enmicel/pro/documentation/icon-attribution.gif) | Atribution|
+| ![Atribution](https://alexestudio86.github.io/enmicel/pro/documentation/icon-attribution.gif) | Atribution |
 |--|--|
 
     <b:widget id='Attribution1' locked='true' title='' type='Attribution' visible='' />
 
-Blog Archive
+| ![Blog Archive](https://alexestudio86.github.io/enmicel/pro/documentation/icon-blogarchive.gif) | Blog Archive |
+|--|--|
 
     <b:widget id='BlogArchive1' locked='' title='' type='BlogArchive' visible='' />
 
-Blogger Button
+| ![Blogger Button](https://alexestudio86.github.io/enmicel/pro/documentation/icon-bloggerbutton.gif) | Blogger Button / Logo |
+|--|--|
 
     <b:widget id='BloggerButton1' locked='' title='' type='BloggerButton' visible='' />
 
-Blog List
+| ![Blog List](https://alexestudio86.github.io/enmicel/pro/documentation/icon-bloglist.gif) | Blog List |
+|--|--|
 
     <b:widget id='BlogList1' locked='' title='' type='BlogList' visible='' />
 
-**Blog Post**
+| ![Blog Post](https://alexestudio86.github.io/enmicel/pro/documentation/icon-blog.gif) | Blog Post |
+|--|--|
 
     <b:widget id='Blog' locked='' title='' type='Blog1' visible='' />
 
-**Blog Search**
+| ![Blog Search](https://alexestudio86.github.io/enmicel/pro/documentation/icon-blogsearch.gif) | Blog Search |
+|--|--|
 
     <b:widget id='BlogSearch1' locked='' title='' type='BlogSearch' visible='' />
 
-Contact Form
+| ![Contact Form](https://alexestudio86.github.io/enmicel/pro/documentation/icon-contactform.gif) | Contact Form |
+|--|--|
 
     <b:widget id='ContactForm1' locked='' title='' type='ContactForm' visible='' />
 
-**Featured Post**
+| ![Featured Post](https://alexestudio86.github.io/enmicel/pro/documentation/icon-featuredpost.gif) | Featured Post |
+|--|--|
 
     <b:widget id='FeaturedPost1' locked='' title='' type='FeaturedPost' visible='' />
 
-Feed
+| ![Feed](https://alexestudio86.github.io/enmicel/pro/documentation/icon-feed.gif) | Feed |
+|--|--|
 
     <b:widget id='Feed1' locked='' title='' type='Feed' visible='' />
 
-Followers
+| ![Followers](https://alexestudio86.github.io/enmicel/pro/documentation/icon-followers.gif) | Followers |
+|--|--|
 
     <b:widget id='Followers1' locked='' title='' type='Followers' visible='' />
 
-**Labels**
+| ![Labels](https://alexestudio86.github.io/enmicel/pro/documentation/icon-label.gif) | Labels|
+|--|--|
 
     <b:widget id='Label1' locked='' title='' type='Label' visible='' />
 
-**Link List**
+| ![Link List](https://alexestudio86.github.io/enmicel/pro/documentation/icon-linklist.gif) | Link List |
+|--|--|
 
     <b:widget id='LinkList1' locked='' title='' type='LinkList' visible='' />
 
-Navbar
-
-    <b:widget id='Navbar1' locked='' title='' type='Navbar' visible='' />
-
-**Page Header**
+| ![Page Header](https://alexestudio86.github.io/enmicel/pro/documentation/icon-header.gif) | Page Header |
+|--|--|
 
     <b:widget id='Header1' locked='true' title='' type='Header' visible='' />
 
-**Page List**
+| ![Page List](https://alexestudio86.github.io/enmicel/pro/documentation/icon-pagelist.gif) | Page List / Pages |
+|--|--|
 
     <b:widget id='PageList1' locked='' title='' type='PageList' visible='' />
 
-**Picture**
+| ![Picture](https://alexestudio86.github.io/enmicel/pro/documentation/icon-image.gif) | Picture / Image |
+|--|--|
 
     <b:widget id='Image1' locked='' title='' type='Image' visible='' />
 
-Popular Post
+| ![Popular Post](https://alexestudio86.github.io/enmicel/pro/documentation/icon-popularposts.gif) | Popular Post |
+|--|--|
 
     <b:widget id='PopularPosts1' locked='' title='' type='PopularPosts' visible='' />
 
-Profile
+| ![Profile](https://alexestudio86.github.io/enmicel/pro/documentation/icon-profile.gif) | Profile |
+|--|--|
+
 
     <b:widget id='Profile1' locked='' title='' type='Profile' visible='' />
 
-Report Abuse
+| ![Report Abuse](https://alexestudio86.github.io/enmicel/pro/documentation/icon-reportabuse.gif) | Report Abuse|
+|--|--|
 
     <b:widget id='ReportAbuse1' locked='' title='' type='ReportAbuse' visible='' />
 
-Text / HTML / Javascript
+| ![HTML/Javascript](https://alexestudio86.github.io/enmicel/pro/documentation/icon-html.gif) | HTML / JavaScript |
+|--|--|
 
     <b:widget id='HTML1' locked='' title='' type='HTML' visible='' />
 
-Stats
+| ![Stats](https://alexestudio86.github.io/enmicel/pro/documentation/icon-stats.gif) | Stats / Blog Stats |
+|--|--|
 
     <b:widget id='Stats1' locked='' title='' type='Stats' visible='' />
 
 
-Subscribe
+| ![Subscribe](https://alexestudio86.github.io/enmicel/pro/documentation/icon-subscribe.gif) | Subscribe / Subscription Links |
+|--|--|
 
     <b:widget id='Subscribe1' locked='' title='' type='Subscribe' visible='' />
 
-Text
+| ![Text](https://alexestudio86.github.io/enmicel/pro/documentation/icon-text.gif) | Text |
+|--|--|
 
     <b:widget id='Text1' locked='' title='' type='Text' visible='' />
 
-Text List
+| ![Text List](https://alexestudio86.github.io/enmicel/pro/documentation/icon-textlist.gif) | Text List / List |
+|--|--|
 
     <b:widget id='TextList1' locked='' title='' type='TextList' visible='' />
 
-Translate
+| ![Translate](https://alexestudio86.github.io/enmicel/pro/documentation/icon-translate.gif) | Translate |
+|--|--|
 
     <b:widget id='Translate1' locked='' title='' type='Translate' visible='' />
 
-Wikipedia
+| ![Wikipedia](https://alexestudio86.github.io/enmicel/pro/documentation/icon-wikipedia.gif) | Wikipedia|
+|--|--|
 
     <b:widget id='Wikipedia1' locked='' title='' type='Wikipedia' visible='' />
