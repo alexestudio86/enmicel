@@ -102,69 +102,41 @@ El siguiente código sirve para comenzar un template de blogger desde cero, con 
     </html>
 
 
-# Siguiente
+# Condicionales + Vistas y Páginas
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+El siguiente código sirve para añadir las vistas principales y páginas que se adecuan a cualquier sitio, la estructura general sería:
+Mobile
+-Homepage
+-Post
+Desktop
+-Homepage
+-Post
 
-
-  <meta  content='Alejando R'  name='author'/>
-  <meta  content='width=device-width, initial-scale=1.0'  name='viewport'/>
-  <!-- Custom CDN -->
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' />
-  <link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css' />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!-- Custom styles -->
-  <style  type='text/css'>/* <![CDATA[ */
-    body, html {
-      width: 100%;
-      height: 100%;
-      scroll-behavior:smooth;
-    } 
-  /* ]]> */</style>
-  <b:if  cond='data:blog.isMobileRequest'>
-  <b:comment  render='false'>
-  <!-- Mobile -->
-  </b:comment>
-  <b:if  cond='data:view.isHomepage'>
+    <b:if  cond='data:blog.isMobileRequest'>
     <b:comment  render='false'>
-    <!-- Mobile | Homepage -->
+    <!-- Mobile -->
     </b:comment>
-    <b:else  />
-    <b:comment  render='false'>
-    <!-- Mobile | Pages -->
-    </b:comment>
+      <b:if  cond='data:view.isHomepage'>
+      <b:comment  render='false'>
+      <!-- Mobile | Homepage -->
+      </b:comment>
+      <b:else />
+      <b:comment  render='false'>
+      <!-- Mobile | Pages -->
+      </b:comment>
     </b:if>
-    <b:else />
+    <b:else/>
     <b:comment  render='false'>
     <!-- Desktop -->
     </b:comment>
-    <b:if  cond='data:view.isHomepage'>
-    <b:comment  render='false'>
-    <!-- Desktop | Homepage -->
-    </b:comment>
-    <b:else  />
-    <b:comment  render='false'>
-    <!-- Desktop | Pages -->
-    </b:comment>
+      <b:if  cond='data:view.isHomepage'>
+      <b:comment  render='false'>
+      <!-- Desktop | Homepage -->
+      </b:comment>
+      <b:else />
+      <b:comment  render='false'>
+      <!-- Desktop | Pages -->
+      </b:comment>
+      </b:if>
     </b:if>
-  </b:if>
-  <!-- Layout Configuration -->
-  <b:skin><![CDATA[
-  ]]></b:skin>
-&lt;/head&gt;&lt;!--<head/>--&gt;   
-<body>
-  <b:comment  render='false'>
-  <!-- Dummy Section -->   
-  </b:comment>
-  <b:section  id='dummy'>
-  </b:section> 
-  <script>//<![CDATA[
-  //]]></script>
-</body>
-</html>
-
-
-# Siguiente
-
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
