@@ -181,126 +181,147 @@ FORMA INCORRECTA
 
 | ![Google AdSence](https://alexestudio86.github.io/enmicel/pro/documentation/icon-adsense.gif) | AdSence |
 |--|--|
+
 Reutilizable, retorna publicidad para el sitio (previamente validado por AdSence)
 
     <b:widget id='AdSense1' locked='true' title='' type='AdSense' visible='' />
 
 | ![Atribution](https://alexestudio86.github.io/enmicel/pro/documentation/icon-attribution.gif) | Atribution |
 |--|--|
+
 No reutilizable, retorna información customizada en un cuadro de texto
 
 <b:widget id='Attribution1' locked='true' title='' type='Attribution' visible='' />
 
 | ![Blog Archive](https://alexestudio86.github.io/enmicel/pro/documentation/icon-blogarchive.gif) | Blog Archive |
 |--|--|
+
 Reutilizable, retorna una lista con links a las entradas o post
 
     <b:widget id='BlogArchive1' locked='' title='' type='BlogArchive' visible='' />
 
 | ![Blogger Button](https://alexestudio86.github.io/enmicel/pro/documentation/icon-bloggerbutton.gif) | Blogger Button / Logo |
 |--|--|
+
 Reutilizable, retorna un botón de tipo insignia que apunta a blogger
 
     <b:widget id='BloggerButton1' locked='' title='' type='BloggerButton' visible='' />
 
 | ![Blog List](https://alexestudio86.github.io/enmicel/pro/documentation/icon-bloglist.gif) | Blog List |
 |--|--|
+
 Reutilizable, retorna una lista de links con los blogs creados y administrados por el autor
 
     <b:widget id='BlogList1' locked='' title='' type='BlogList' visible='' />
 
 | ![Blog Post](https://alexestudio86.github.io/enmicel/pro/documentation/icon-blog.gif) | Blog Post |
 |--|--|
+
 No reutilizable, retorna los post (body, [título, imagen rescalable, texto, resumen del texto, fecha de posteo, etiquetas del post])
 
     <b:widget id='Blog' locked='' title='' type='Blog1' visible='' />
 
 | ![Blog Search](https://alexestudio86.github.io/enmicel/pro/documentation/icon-blogsearch.gif) | Blog Search |
 |--|--|
+
 Reutilizable, retorna un formulario para búsqueda para listar resultados de post (principalmente nombre del post)
 
     <b:widget id='BlogSearch1' locked='' title='' type='BlogSearch' visible='' />
 
 | ![Contact Form](https://alexestudio86.github.io/enmicel/pro/documentation/icon-contactform.gif) | Contact Form |
 |--|--|
+
 Reutilizable, retorna un formulario de contacto que llega a los administradores del blog, solo se pueden recibir 3 elementos, asunto, mensaje y correo electrónico
 
     <b:widget id='ContactForm1' locked='' title='' type='ContactForm' visible='' />
 
 | ![Featured Post](https://alexestudio86.github.io/enmicel/pro/documentation/icon-featuredpost.gif) | Featured Post |
 |--|--|
+
 No reutilizable, retorna los datos generales de los post pero solo de una entrada seleccionada (body, [título, imagen rescalable, texto, resumen del texto, fecha de posteo, etiquetas del post])
 
     <b:widget id='FeaturedPost1' locked='' title='' type='FeaturedPost' visible='' />
 
 | ![Feed](https://alexestudio86.github.io/enmicel/pro/documentation/icon-feed.gif) | Feed |
 |--|--|
+
 No reutilizable, retorna por rss el contenido del blog (proximamente dejará de estar disponibile)
 
     <b:widget id='Feed1' locked='' title='' type='Feed' visible='' />
 
 | ![Followers](https://alexestudio86.github.io/enmicel/pro/documentation/icon-followers.gif) | Followers |
 |--|--|
+
 Reutilizable, Retorna un botón con la opción de seguir el blog a traves del perfil de google
 
     <b:widget id='Followers1' locked='' title='' type='Followers' visible='' />
 
 | ![Labels](https://alexestudio86.github.io/enmicel/pro/documentation/icon-label.gif) | Labels|
 |--|--|
+
 Reutilizable, retorna una lista de las etiquetas únicas agregadas a los post, puede ser customizada para aplicar filtros o mostrar números de post por etiqueta
 
     <b:widget id='Label1' locked='' title='' type='Label' visible='' />
 
 | ![Link List](https://alexestudio86.github.io/enmicel/pro/documentation/icon-linklist.gif) | Link List |
 |--|--|
+
 Reutilizable, retorna una lista de textos customizables con link
 
     <b:widget id='LinkList1' locked='' title='' type='LinkList' visible='' />
 
 | ![Page Header](https://alexestudio86.github.io/enmicel/pro/documentation/icon-header.gif) | Page Header |
 |--|--|
+
 No reutilizable, retorna una imagen rescalable, titulo del blog y descripción del widget
 
     <b:widget id='Header1' locked='true' title='' type='Header' visible='' />
 
 | ![Page List](https://alexestudio86.github.io/enmicel/pro/documentation/icon-pagelist.gif) | Page List / Pages |
 |--|--|
+
 Reutilizable, retorna una lista customizable de accesos a las páginas creadas desde el administrador o incluso la opción de crear links customizados
 
     <b:widget id='PageList1' locked='' title='' type='PageList' visible='' />
 
 | ![Picture](https://alexestudio86.github.io/enmicel/pro/documentation/icon-image.gif) | Picture / Image |
 |--|--|
+
 Reutilizable, retorna la url de imágenes cargadas desde el cms, dando la opción de redimencionar la imagen
 
     <b:widget id='Image1' locked='' title='' type='Image' visible='' />
 
 | ![Popular Post](https://alexestudio86.github.io/enmicel/pro/documentation/icon-popularposts.gif) | Popular Post |
 |--|--|
+
 Reutilizable, retorna los datos generales de los post mas populares (body, [título, imagen rescalable, texto, resumen del texto, fecha de posteo, etiquetas del post]), pudiendo listar de 1 a 10
 
     <b:widget id='PopularPosts1' locked='' title='' type='PopularPosts' visible='' />
 
 | ![Profile](https://alexestudio86.github.io/enmicel/pro/documentation/icon-profile.gif) | Profile |
 |--|--|
+
 No reutilizable, retorna los datos del perfil del creador como nombre e imágen de perfil
 
     <b:widget id='Profile1' locked='' title='' type='Profile' visible='' />
 
 | ![Report Abuse](https://alexestudio86.github.io/enmicel/pro/documentation/icon-reportabuse.gif) | Report Abuse|
 |--|--|
+
 No reutilizable, retorna un botón para denunciar el contenido inadecuado
 
     <b:widget id='ReportAbuse1' locked='' title='' type='ReportAbuse' visible='' />
 
 | ![HTML/Javascript](https://alexestudio86.github.io/enmicel/pro/documentation/icon-html.gif) | HTML / JavaScript |
 |--|--|
+
 Reutilizable, retorna el contenido de un texto que puede ser interpretado como texto plano o código
 
     <b:widget id='HTML1' locked='' title='' type='HTML' visible='' />
 
 | ![Stats](https://alexestudio86.github.io/enmicel/pro/documentation/icon-stats.gif) | Stats / Blog Stats |
 |--|--|
+
 No reutilizable, muestra gráficos simples de las visitas del sitio
 
     <b:widget id='Stats1' locked='' title='' type='Stats' visible='' />
@@ -308,30 +329,35 @@ No reutilizable, muestra gráficos simples de las visitas del sitio
 
 | ![Subscribe](https://alexestudio86.github.io/enmicel/pro/documentation/icon-subscribe.gif) | Subscribe / Subscription Links |
 |--|--|
+
 Reutilizables, muestra botones para sucripción del blog a traves de serviucios de srss
 
     <b:widget id='Subscribe1' locked='' title='' type='Subscribe' visible='' />
 
 | ![Text](https://alexestudio86.github.io/enmicel/pro/documentation/icon-text.gif) | Text |
 |--|--|
+
 Reutilizable, retorna texto plano
 
     <b:widget id='Text1' locked='' title='' type='Text' visible='' />
 
 | ![Text List](https://alexestudio86.github.io/enmicel/pro/documentation/icon-textlist.gif) | Text List / List |
 |--|--|
+
 Reutilizable, retorna una lista de texto plano
 
     <b:widget id='TextList1' locked='' title='' type='TextList' visible='' />
 
 | ![Translate](https://alexestudio86.github.io/enmicel/pro/documentation/icon-translate.gif) | Translate |
 |--|--|
+
 No reutilizable, retorna una barra que permite traducior el sitio a traves del traductor de google
 
     <b:widget id='Translate1' locked='' title='' type='Translate' visible='' />
 
 | ![Wikipedia](https://alexestudio86.github.io/enmicel/pro/documentation/icon-wikipedia.gif) | Wikipedia|
 |--|--|
+
 No reutilizable, retorna una barra de búsqueda en donde se pueden realizar búsquedas de wikipedia
 
     <b:widget id='Wikipedia1' locked='' title='' type='Wikipedia' visible='' />
