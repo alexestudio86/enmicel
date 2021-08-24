@@ -43,6 +43,9 @@ const updateTotalAside = () => {
   }
 }
 
+// Update total aside
+updateTotalAside();
+
 
 // SHOW BUTTON CONTINUE
 
