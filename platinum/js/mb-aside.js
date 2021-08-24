@@ -17,6 +17,7 @@ const createAside = () => {
 
 }
 
+// Call create aside
 createAside();
 
 
@@ -28,3 +29,16 @@ const toggleAside = () => {
 
 // Add event to open aside
 document.getElementById('opencart').addEventListener('click', toggleAside );
+
+
+// UPDATE TOTAL OF ASIDE
+
+const updateTotalAside = () => {
+  totalAside = document.querySelector('aside span#totalAside');
+  totalAside.textContent = car.reduce( (sum, value) => (typeof value.precio == 'number' ? sum + (value.cantidad * value.precio) : sum), 0 );
+  if( car.length > 0 ){
+    totalAside.classList.add('w3-teal');
+  }else{
+    totalAside.classList.remove('w3-teal');
+  }
+}
