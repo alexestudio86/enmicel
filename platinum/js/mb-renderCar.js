@@ -9,7 +9,7 @@ const renderCar = () => {
     const itemTemplate = document.getElementById('itemTemplate').content;
 
     // Ittem close button
-    itemTemplate.querySelector('button[name=closeButton]').setAttribute('data-index', index);
+    itemTemplate.querySelector('button[name=deleteButton]').setAttribute('data-index', index);
 
     // Item image
     itemTemplate.querySelector('img').setAttribute('src', item.imagen);
@@ -56,7 +56,7 @@ const renderCar = () => {
   showContinueButton();
 
   // Add events / Close button
-  document.querySelectorAll('aside button[name=closeButton]').forEach( e => e.addEventListener('click', deleteConfirmation) );
+  document.querySelectorAll('aside button[name=deleteButton]').forEach( e => e.addEventListener('click', deleteConfirmation) );
 
   // Add event to substraction
   document.querySelectorAll('aside button[name=substraction]').forEach( e => e.addEventListener('click', (e) => {
