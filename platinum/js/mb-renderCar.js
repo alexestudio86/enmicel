@@ -85,4 +85,4 @@ const renderCar = () => {
 
 
 // Render Car
-//renderCar();
+renderCar();
