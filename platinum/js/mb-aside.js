@@ -50,6 +50,7 @@ updateTotalAside();
 // SHOW BUTTON CONTINUE
 
 const showContinueButton = () => {
+
   continueButton = document.getElementById('continuar');
   if( car.length > 0 ){
     continueButton.classList.add('w3-show');
@@ -58,4 +59,8 @@ const showContinueButton = () => {
     continueButton.classList.remove('w3-show');
     continueButton.removeEventListener('click', showFormData);
   }
+
 }
+
+// Show continue button
+showContinueButton();
