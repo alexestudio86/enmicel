@@ -82,3 +82,7 @@ const renderCar = () => {
   setCarLocal();
 
 }
+
+
+// Render Car
+renderCar();
