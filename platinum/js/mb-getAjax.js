@@ -13,7 +13,7 @@ const enableShowCar = () => {
 // Show car aside in post
 const showCar = () => {
   setTimeout( () => {
-    document.getElementById('opencart').click();
+    document.getElementById('opencar').click();
   }, 200 );
   setTimeout( () => {
     document.getElementById('exitModal').click();
