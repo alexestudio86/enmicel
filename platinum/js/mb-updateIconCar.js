@@ -9,3 +9,6 @@ const updateIconCarrito = () => {
     totalIconCarrito.classList.remove('w3-text-red');
   }
 }
+
+// Update Icon Carrito
+updateIconCarrito();
