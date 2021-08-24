@@ -1,27 +1,19 @@
 // SHOW BOTTOM BAR
 
-const showFormData = () => {
-  modalGeneral();
-  const modal = document.getElementById('modal');
+const bottomBar = () => {
+ 
+  const body = document.querySelector('body');
   const fragment = document.createDocumentFragment();
-  const formDataTemplate = document.getElementById('formDataTemplate').content;
-  const clone = formDataTemplate.cloneNode(true);
+  const bottomBarTemplate = document.getElementById('bottomBarTemplate').content
+  const clone = bottomBarTemplate.cloneNode(true);
   fragment.appendChild(clone);
 
   // Insert Aside
-  modal.appendChild(fragment);
+  body.appendChild(fragment);
 
-  // Focus input
-  modal.querySelector('input#customerName').focus();
-
-  // Prevent default
-  modal.querySelector('form').addEventListener('submit', (e) => e.preventDefault() );
-  modal.querySelector('form').addEventListener('submit', validateInput );
-
-  // Add evento cancel button
-  modal.querySelector('button[name=btnCancel]').addEventListener('click', modalGeneral);
-
-  // Add evento continue button
-  modal.querySelector('a[name=btnContinue]').addEventListener('click', validateInput);
+  // Hide bottomBar
+  setTimeout( () => {
+    body.removeChild(body.lastElementChild);
+  }, 2000 );
 
 }
