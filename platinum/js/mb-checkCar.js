@@ -1,4 +1,5 @@
 // DECLARATE CAR
+
 const car = JSON.parse(localStorage.getItem('car')) || [];
 
 
@@ -7,3 +8,6 @@ const setCarLocal = () => {
   carString = JSON.stringify(car);
   localStorage.setItem('car', carString);
 }
+
+// Set car to local storage
+setCarLocal();
