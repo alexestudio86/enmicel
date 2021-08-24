@@ -34,3 +34,6 @@ const addItem = (e) => {
   renderCar();
 
 }
+
+
+renderCar();
