@@ -5,7 +5,10 @@ const toggleAside = () => {
 }
 
 // Add event to open aside
-document.getElementById('opencar').addEventListener('click', toggleAside );
+document.getElementById('opencar').addEventListener('click', () => {
+  toggleAside();
+  renderCar();
+});
 
 
 // CREATE ASIDE
