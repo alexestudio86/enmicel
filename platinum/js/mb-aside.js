@@ -5,7 +5,7 @@ const toggleAside = () => {
 }
 
 // Add event to open aside
-document.getElementById('opencart').addEventListener('click', toggleAside );
+document.getElementById('opencar').addEventListener('click', toggleAside );
 
 
 // CREATE ASIDE
