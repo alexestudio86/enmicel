@@ -42,3 +42,17 @@ const updateTotalAside = () => {
     totalAside.classList.remove('w3-teal');
   }
 }
+
+
+// SHOW BUTTON CONTINUE
+
+const showContinueButton = () => {
+  continueButton = document.getElementById('continuar');
+  if( car.length > 0 ){
+    continueButton.classList.add('w3-show');
+    continueButton.addEventListener('click', showFormData);
+  }else{
+    continueButton.classList.remove('w3-show');
+    continueButton.removeEventListener('click', showFormData);
+  }
+}
