@@ -37,10 +37,11 @@ const makeProduct = () => {
           individualTitles.push(input.getAttribute('data-text'));
         }
       }
-    }else if (val.id == 'quantity'){
-      quantity = parseInt(document.getElementById('quantity').value);
     }else{
-    };
+      if(val.id != 'buscaProducts'){
+        quantity = parseInt(document.getElementById('quantity').value);
+      }
+    }
   };
 
   // Get global price
