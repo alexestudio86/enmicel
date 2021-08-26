@@ -1,4 +1,5 @@
 //MODAL PROMOTIONS TEMPLATE
+
 function modalPromotionsTemplate(){
   let modal = document.getElementById('modal');
   modalContent = document.createElement('div');
@@ -28,11 +29,12 @@ function modalPromotionsTemplate(){
 
 
 // EVENT PROMOS
+
 function eventsPromotions () {
   let promos = document.querySelectorAll('figure');
   for (let promo of promos){
-	promo.addEventListener('click', modalGeneral, true);
-	promo.addEventListener('click', modalPromotionsTemplate);
+  promo.addEventListener('click', modalGeneral, true);
+  promo.addEventListener('click', modalPromotionsTemplate);
   }
 }
 
