@@ -20,7 +20,7 @@ const makeProduct = () => {
 
   // Select single form
   for ( const [ind, val] of formularios.entries() ) {
-    if(val.id != 'formSelect'){
+    if(val.id != 'formSelect' || val.id != 'buscaProducts'){
       const subTotal = new FormData(val);
       // Get global price
       for (const [index, value] of subTotal.entries()) {
@@ -38,9 +38,7 @@ const makeProduct = () => {
         }
       }
     }else{
-      if(val.id != 'buscaProducts'){
-        quantity = parseInt(document.getElementById('quantity').value);
-      }
+      quantity = parseInt(document.getElementById('quantity').value);
     }
   };
 
