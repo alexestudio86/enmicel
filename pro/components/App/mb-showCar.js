@@ -1,4 +1,5 @@
-// SHOW CAR
+//SHOW CAR
+
 function showCar(){
   let opencart = document.getElementById('opencart');
   closecart = document.querySelector('#aside a');
