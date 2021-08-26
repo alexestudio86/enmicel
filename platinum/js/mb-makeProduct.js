@@ -39,7 +39,7 @@ const makeProduct = () => {
         }
       }
     }else{
-      quantity = parseInt(modal.getElementById('quantity').value);
+      quantity = parseInt(modal.querySelector('#quantity').value);
     }
   };
 
