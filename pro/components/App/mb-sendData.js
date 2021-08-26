@@ -1,4 +1,5 @@
 // SEND DATA
+
 function sendData(){
   whatsappNumber = '+5215562848048';
   textIntro = '%5F'+encodeURIComponent('Hola, me gustaría ordenar')+'%5F%0A%0A';
@@ -24,8 +25,6 @@ function sendData(){
   },1000);
 
 }
-
-
 
 // VALIDATE NAME
 function validateName(){
