@@ -11,16 +11,17 @@ let price               =	1000;
 
 const makeProduct = () => {
 
+  const modal = document.getElementById('modal');
   individualTitles.splice(0,individualTitles.length);
   individualPrices.splice(0,individualPrices.length);
   let getPrice = document.getElementById('pricePost');
 
   // Select all forms
-  const formularios = document.querySelectorAll('form');
+  const formularios = modal.querySelectorAll('form');
 
   // Select single form
   for ( const [ind, val] of formularios.entries() ) {
-    if(val.id != 'formSelect' || val.id != 'buscaProducts'){
+    if(val.id != 'formSelect'){
       const subTotal = new FormData(val);
       // Get global price
       for (const [index, value] of subTotal.entries()) {
@@ -38,7 +39,7 @@ const makeProduct = () => {
         }
       }
     }else{
-      quantity = parseInt(document.getElementById('quantity').value);
+      quantity = parseInt(modal.getElementById('quantity').value);
     }
   };
 
