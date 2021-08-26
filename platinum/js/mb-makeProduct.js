@@ -37,8 +37,9 @@ const makeProduct = () => {
           individualTitles.push(input.getAttribute('data-text'));
         }
       }
-    }else{
+    }else if (val.id == 'quantity'){
       quantity = parseInt(document.getElementById('quantity').value);
+    }else{
     };
   };
 
