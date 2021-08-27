@@ -25,7 +25,7 @@ const showCar = () => {
 
 const getAjax = async(e) => {
   try {
-    const res = await fetch('feeds/posts/full/' + e.currentTarget.getAttribute('data-ident') + '?alt=json');
+    const res = await fetch('https://titbit.alexestudio86.com/'+'feeds/posts/full/' + e.currentTarget.getAttribute('data-ident') + '?alt=json');
 		const data = await res.json()
 
       modalGeneral();
