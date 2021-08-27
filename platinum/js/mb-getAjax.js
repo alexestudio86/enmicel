@@ -21,11 +21,11 @@ const showCar = () => {
 }
 
 
-// GET POST AJAX
+// GET POST AJAX (Change this fetch if you want make dynamic consulting )
 
 const getAjax = async(e) => {
   try {
-    const res = await fetch('https://titbit.alexestudio86.com/'+'feeds/posts/full/' + e.currentTarget.getAttribute('data-ident') + '?alt=json');
+    const res = await fetch('https://demo-platinum.enmicel.com/'+'feeds/posts/full/' + e.currentTarget.getAttribute('data-ident') + '?alt=json');
 		const data = await res.json()
 
       modalGeneral();
