@@ -19,6 +19,6 @@ const bottomBar = () => {
     body.removeChild(body.lastElementChild);
   }, 5000 );
 
-  document.querySelector('#bottomBar button').addEventListener('click', toggleSidebar);
+  document.querySelector('#bottomBar button').addEventListener('click', toggleAside);
 
 }
