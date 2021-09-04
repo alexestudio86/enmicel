@@ -49,9 +49,14 @@ const updateTotalsIcon = () => {
 // UPDATE CAR BUTTONS
 
 const updateCarButtons = () => {
-  document.querySelectorAll('article button').forEach( e => e.classList.remove('w3-disabled') );
-  car.forEach( e => {
-    buttonDisable = document.querySelector(`article button[ident='${e.id}']`);
-    buttonDisable.classList.add('w3-disabled');
-  });
+  carButtons = document.querySelectorAll('article button');
+  if(carButtons){
+    carButtons.forEach( e => e.classList.remove('w3-disabled') )
+  }
+  if(car.length > 0){
+    car.forEach( e => {
+      buttonDisable = document.querySelector(`article button[ident='${e.id}']`);
+      buttonDisable.classList.add('w3-disabled');
+    });
+  }
 }
