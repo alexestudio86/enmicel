@@ -26,4 +26,5 @@ const redirect = () => {
     location.replace(sendMessage);
     }, 2000
   );
+
 }
