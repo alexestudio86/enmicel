@@ -18,4 +18,7 @@ const showFormData = () => {
   // Add event to cotinue
   modal.querySelector('a[name=btnContinue]').addEventListener('click', validateInput );
 
+  // Remove default
+  modal.querySelector('form').addEventListener('submit', (e) => e.preventDefault() );
+
 }
